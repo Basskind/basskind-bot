@@ -6,10 +6,6 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('ready', () => {
-    client.setGame("GAME");
-});
-
 client.on('message', msg => {
   if (msg.content === Prefix + 'Ping') {
     msg.reply('Pong');
