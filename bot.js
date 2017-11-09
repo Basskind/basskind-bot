@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const Prefix = "?"
+const Prefix = "?";
 
 client.on("ready", () => {
   // This event will run if the bot starts, and logs in, successfully.
