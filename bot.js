@@ -3,14 +3,10 @@ const client = new Discord.Client();
 const Prefix = "?"
 
 client.on('ready', () => {
-        var opts = {
-                name: 'Call of Duty: Black Ops 10',
-                url: 'https://www.twitch.tv/lirik',
-                type: 1
-        };
-
-        client.setStatus(null, opts);
+    console.log('I am ready!');
 });
+
+client.setGame("GAME");
 
 client.on('message', msg => {
   if (msg.content === Prefix + 'Ping') {
