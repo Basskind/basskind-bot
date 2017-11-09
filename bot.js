@@ -4,6 +4,7 @@ const Prefix = "?"
 
 client.on('ready', () => {
     console.log('I am ready!');
+    client.user.setPresence({ game: { name: '?basskind', type: 0 } });
 });
 
 client.on('message', msg => {
