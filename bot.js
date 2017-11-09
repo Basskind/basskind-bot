@@ -22,7 +22,7 @@ client.on("guildDelete", guild => {
 // ?basskind
 client.on('message', msg => {
   if (msg.content === Prefix + 'basskind') {
-    msg.reply('My Daddy is Basskid. Give him a Dollar');
+    msg.reply('My Daddy is Basskid#9068. Give him a Dollar');
   }
 });
 
