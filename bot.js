@@ -29,8 +29,7 @@ client.on('message', msg => {
 // ?ping
 client.on('message', msg => {
   if (msg.content === Prefix + 'ping') {
-    const m = await message.channel.send("Ping?");
-    m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
+    msg.reply('Pong');
   }
 });
 
