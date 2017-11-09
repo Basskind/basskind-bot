@@ -3,7 +3,13 @@ const client = new Discord.Client();
 const Prefix = "?"
 
 client.on('ready', () => {
-        client.setStreaming('Call of Duty: Black Ops 10', 'https://www.twitch.tv/lirik', 1);
+        var opts = {
+                name: 'Call of Duty: Black Ops 10',
+                url: 'https://www.twitch.tv/lirik',
+                type: 1
+        };
+
+        client.setStatus(null, opts);
 });
 
 client.on('message', msg => {
