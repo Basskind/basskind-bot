@@ -4,6 +4,7 @@ const Prefix = "?"
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setGame(`on ${client.guilds.size} servers`);
 });
 
 client.on('message', msg => {
