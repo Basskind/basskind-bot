@@ -4,6 +4,13 @@ const Prefix = "?"
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+        var opts = {
+                name: 'PUBG 2',
+                url: 'https://www.twitch.tv/basskidtv',
+                type: 1
+        };
+
+        client.setStatus(null, opts);
 });
 
 client.on('message', msg => {
