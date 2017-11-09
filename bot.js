@@ -1,14 +1,21 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const Prefix = "?"
 
 client.on('ready', () => {
-    console.log('I am ready!');
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
+client.on('message', msg => {
+  if (msg.content === Prefix + 'Ping') {
+    msg.reply('Pong');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === Prefix + 'Creator') {
+    msg.reply('My creator is Basskid');
+  }
 });
 
 // THIS  MUST  BE  THIS  WAY
