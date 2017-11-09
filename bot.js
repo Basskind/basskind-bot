@@ -3,8 +3,7 @@ const client = new Discord.Client();
 const Prefix = "?"
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-  client.setPlayingGame('Call of Duty: Black Ops 10');
+        client.setStreaming('Call of Duty: Black Ops 10', 'https://www.twitch.tv/lirik', 1);
 });
 
 client.on('message', msg => {
