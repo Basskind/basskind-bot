@@ -3,8 +3,8 @@ const client = new Discord.Client();
 const Prefix = "?"
 
 client.on('ready', () => {
-    console.log('I am ready!');
-    client.user.setPresence({ game: { name: '?basskind', type: 0 } });
+    console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
+    client.user.setPresence({ game: { name: 'on ${client.guilds.size} servers', type: 0 } });
 });
 
 client.on('message', msg => {
