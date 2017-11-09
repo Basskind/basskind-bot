@@ -6,6 +6,10 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+client.on('ready', () => {
+        client.setStreaming('Call of Duty: Black Ops 10', 'https://www.twitch.tv/lirik', 1);
+});
+
 client.on('message', msg => {
   if (msg.content === Prefix + 'Ping') {
     msg.reply('Pong');
