@@ -1,2 +1,2 @@
 # basskind-bot
-Bot using heroku 24/7
+A Bot using discord.js Hosting on heroku.com 24/7
