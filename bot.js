@@ -27,7 +27,7 @@ client.on('message', msg => {
 // ?ping
 client.on('message', msg => {
   if (msg.content === Prefix + 'ping') {
-    msg.reply(':ping_pong: Pong! ${guild.name}');
+    msg.reply(':ping_pong: Pong! Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.');
   }
 });
 
