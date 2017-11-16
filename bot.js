@@ -23,14 +23,13 @@ client.on("guildDelete", guild => {
 client.on('message', msg => {
   if (msg.content === Prefix + 'basskind') {
     msg.reply('My Daddy is Basskid#9068. Give him a Dollar');
-    msg.reply(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
   }
 });
 
 // ?ping
 client.on('message', msg => {
   if (msg.content === Prefix + 'ping') {
-    msg.reply('Pong');
+    msg.reply(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
   }
 });
 
