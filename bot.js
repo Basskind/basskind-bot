@@ -29,7 +29,7 @@ client.on('message', msg => {
 // ?ping
 client.on('message', msg => {
   if (msg.content === Prefix + 'ping') {
-    msg.reply(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+    msg.reply(':ping_pong: Pong!');
   }
 });
 
