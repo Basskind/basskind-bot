@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const Prefix = "?"
+const Prefix = "?";
 
 client.on('ready', () => {
-    console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
+    console.log(`Bot has started.`);
     client.user.setPresence({ game: { name: '?help für Hilfe', type: 0 } });
 });
 
@@ -27,7 +27,7 @@ client.on('message', msg => {
 // ?ping
 client.on('message', msg => {
   if (msg.content === Prefix + 'ping') {
-    msg.reply(':ping_pong: Pong! Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.');
+    msg.reply(':ping_pong: Pong!');
   }
 });
 
