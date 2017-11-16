@@ -27,7 +27,7 @@ client.on('message', msg => {
 // ?ping
 client.on('message', msg => {
   if (msg.content === Prefix + 'ping') {
-    msg.reply(':ping_pong: Pong!');
+    msg.reply(':ping_pong: Pong! ${guild.name}');
   }
 });
 
