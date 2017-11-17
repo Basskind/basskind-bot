@@ -20,16 +20,10 @@ client.on('guildMemberAdd', member => {
 // ?help
 client.on('message', msg => {
   if (msg.content === Prefix + 'help') {
-    const ce = require("embed-creator");
- 
-msg.channel.send(ce(
-  "#FEAFEA", {"name": "Fire", "icon_url": msg.author.displayAvatarURL(), "url": "https://www.google.com"}, "Title", "Description",
-  [{"name": "Field 1", "value": "Value 1"}, 
-   {"name": "Field 2", "value": "Value 2"}],
-  {"text": "This is footer text!", "icon_url": msg.guild.iconURL()}, 
-  {"thumbnail": msg.guild.iconURL(), "image": msg.author.displayAvatarURL()}, false
-));
-}
+    message.channel.send({embed: {
+  color: 3447003,
+  description: "A very simple Embed!"
+  }
 });
 
 // ?ping
