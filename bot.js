@@ -24,12 +24,16 @@ client.on('message', msg => {
   }
 });
 
-// ?help (dev)
+// Create an event listener for new guild members
 client.on('message', msg => {
-  if (msg.content === Prefix + 'help') {
-    msg.send(':ping_pong: Pong!');
-  }
-});
+    if (msg.content === Prefix + 'ping') {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.find('name', 'welcome');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+  channel.send(`testestestestestestest, ${member}`);
+}});
 
 
 // THIS  MUST  BE  THIS  WAY
