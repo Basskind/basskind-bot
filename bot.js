@@ -18,10 +18,9 @@ client.on('guildMemberAdd', member => {
 });
 
 // ?help
-client.on('message', msg => 
-    {
-        if (msg.content === Prefix + 'help') {
-         msg.reply({embed: {
+client.on('message', msg => {
+  if (msg.content === Prefix + 'help') {
+  msg.reply({embed: {
   color: 3447003,
   description: "A very simple Embed!"
 }});
