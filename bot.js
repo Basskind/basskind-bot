@@ -31,10 +31,6 @@ client.on('message', msg => {
   color: 3447003,
   description: "A very simple Embed!"
 }});
-  }
-});
-
-
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
