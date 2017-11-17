@@ -27,12 +27,10 @@ client.on('message', msg => {
 // ?help (dev)
 client.on('message', msg => {
   if (msg.content === Prefix + 'help') {
-    msg.sendMessage({embed: {
-  color: 3447003,
-  description: "A very simple Embed!"
-}});
-      }
+    msg.send(':ping_pong: Pong!');
+  }
 });
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
