@@ -17,14 +17,24 @@ client.on('guildMemberAdd', member => {
   channel.send(`Welcome to the server, ${member}`);
 });
 
-
-
-// ?ping
+// ?ping (works)
 client.on('message', msg => {
   if (msg.content === Prefix + 'ping') {
     msg.reply(':ping_pong: Pong!');
   }
 });
+
+// ?help (dev)
+client.on('message', msg => {
+  if (msg.content === Prefix + 'ping') {
+    msg.reply({embed: {
+  color: 3447003,
+  description: "A very simple Embed!"
+}});
+  }
+});
+
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
