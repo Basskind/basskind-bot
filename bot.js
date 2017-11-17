@@ -14,13 +14,20 @@ client.on('guildMemberAdd', member => {
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
-  channel.send(`Willkommen auf dem Discord Server von ${server}, ${member}`);
+  channel.send(`Willkommen auf dem Discord Server von Basskid TV, ${member}`);
 });
 
 // ?ping (works)
 client.on('message', msg => {
   if (msg.content === Prefix + 'ping') {
     msg.reply(':ping_pong: Pong!');
+  }
+});
+
+// ?help
+client.on('message', msg => {
+  if (msg.content === Prefix + 'help') {
+    msg.reply(':warning: under construction');
   }
 });
 
