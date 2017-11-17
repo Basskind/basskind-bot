@@ -7,17 +7,17 @@ client.on('ready', () => {
     client.user.setPresence({ game: { name: '?help für Hilfe', type: 0 } });
 });
 
-client.on("guildCreate", guild => {
-  // This event triggers when the bot joins a guild.
-  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+// Create an event listener for new guild members
+client.on('guildMemberAdd', member => {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.find('name', 'welcome');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+  channel.send(`Welcome to the server, ${member}`);
 });
 
-client.on("guildDelete", guild => {
-  // this event triggers when the bot is removed from a guild.
-  console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-});
-
-// ?basskind
+// ?help
 client.on('message', msg => {
   if (msg.content === Prefix + 'basskind') {
     msg.reply('My Daddy is Basskid#9068. Give him a Dollar');
