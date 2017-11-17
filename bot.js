@@ -27,10 +27,12 @@ client.on('message', msg => {
 // ?help (dev)
 client.on('message', msg => {
   if (msg.content === Prefix + 'ping') {
-    msg.reply({embed: {
+    message.channel.send({embed: {
   color: 3447003,
   description: "A very simple Embed!"
 }});
+      }
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
