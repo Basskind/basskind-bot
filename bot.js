@@ -38,7 +38,7 @@ client.on('message', msg =>
             .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
             channel.send({embed});
         }
-    };
+    });
 
 // ?ping
 client.on('message', msg => {
