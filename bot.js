@@ -29,6 +29,8 @@ msg.channel.send(ce(
   {"text": "This is footer text!", "icon_url": msg.guild.iconURL()}, 
   {"thumbnail": msg.guild.iconURL(), "image": msg.author.displayAvatarURL()}, false
 ));
+}
+});
 
 // ?ping
 client.on('message', msg => {
