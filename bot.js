@@ -48,7 +48,7 @@ client.on('message', msg => {
   .addBlankField(true)
   .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
 
-  message.channel.send({embed});
+  channel.send({embed});
       }
 });
 
