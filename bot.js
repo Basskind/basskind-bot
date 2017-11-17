@@ -26,7 +26,7 @@ client.on('message', msg => {
 
 // ?help (dev)
 client.on('message', msg => {
-  if (msg.content === Prefix + 'ping') {
+  if (msg.content === Prefix + 'help') {
     message.channel.send({embed: {
   color: 3447003,
   description: "A very simple Embed!"
