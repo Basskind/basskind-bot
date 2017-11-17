@@ -21,7 +21,7 @@ client.on('guildMemberAdd', member => {
 client.on('message', msg => {
   if (msg.content === Prefix + 'help') {
     const embed = new Discord.RichEmbed()
-    .setAuthor('CMS Bot', 'https://Put your image link here)
+    .setAuthor('CMS Bot', 'https://cdn.discordapp.com/attachments/380541150156685312/380908831095521290/bk_avatar.jpg)
 
   .setColor(0x00AE86)
   .setDescription('This is the description of your embed message')
@@ -35,7 +35,9 @@ client.on('message', msg => {
     'Example field2')
   
   .addField('Field3',
-    'As far as i know you can have alot of fields so feel free to copy the code and place it under this field.')
+    'As far as i know you can have alot of fields so feel free to copy the code and place it under this field.');
+  }
+});
 
 // ?ping
 client.on('message', msg => {
