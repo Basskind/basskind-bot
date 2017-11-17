@@ -21,7 +21,7 @@ client.on('guildMemberAdd', member => {
 client.on('message', msg => {
   if (msg.content === Prefix + 'help') {
     const embed = new Discord.RichEmbed()
-    .setAuthor('CMS Bot', 'https://cdn.discordapp.com/attachments/380541150156685312/380908831095521290/bk_avatar.jpg)
+    .setAuthor('CMS Bot', 'https://cdn.discordapp.com/attachments/380541150156685312/380908831095521290/bk_avatar.jpg')
 
   .setColor(0x00AE86)
   .setDescription('This is the description of your embed message')
