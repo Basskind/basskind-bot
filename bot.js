@@ -19,10 +19,23 @@ client.on('guildMemberAdd', member => {
 
 // ?help
 client.on('message', msg => {
-  if (msg.content === Prefix + 'basskind') {
-    msg.reply('My Daddy is Basskid#9068. Give him a Dollar');
-  }
-});
+  if (msg.content === Prefix + 'help') {
+    const embed = new Discord.RichEmbed()
+    .setAuthor('CMS Bot', 'https://Put your image link here)
+
+  .setColor(0x00AE86)
+  .setDescription('This is the description of your embed message')
+  .setFooter('© ClipzZModz', 'https://put a logo link here if you want ')
+  
+  .setTimestamp()
+  .addField('Field1',
+    'Example field1')
+  
+  .addField('Field2',
+    'Example field2')
+  
+  .addField('Field3',
+    'As far as i know you can have alot of fields so feel free to copy the code and place it under this field.')
 
 // ?ping
 client.on('message', msg => {
