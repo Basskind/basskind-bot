@@ -63,18 +63,18 @@ const embed = new Discord.RichEmbed()
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
-  .setColor(0x00AE86)
-  .setDescription("This is the main body of text, it can hold 2048 characters.")
-  .setFooter("This is the footer text, it can hold 2048 characters", "http://i.imgur.com/w1vhFSR.png")
-  .setImage("http://i.imgur.com/yVpymuV.png")
-  .setThumbnail("http://i.imgur.com/p2qNFag.png")
+  .setColor(0x0086AE)
+  .setDescription("Ehemaliger Playstation 4 „The Elder Scrolls Online“ Spieler. Dort verbrachte ich wunderschöne Jahre. Im Hinblick auf Teamfähigkeit haben Konsolenspieler (zumindest sehr sehr viele) extreme Egoistische Züge, weshalb es mich wieder zurück zu meiner alten Heimat, dem PC, lockte.")
+  .setFooter("© by www.basskid.de")
+  .setImage("https://cdn.discordapp.com/attachments/380540227380314114/392936748067454976/bk_avatar.jpg")
+  .setThumbnail("https://cdn.discordapp.com/attachments/380540227380314114/392936748067454976/bk_avatar.jpg")
   /*
    * Takes a Date object, defaults to current date.
    */
   .setTimestamp()
-  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("This is a field title, it can hold 256 characters",
-    "This is a field value, it can hold 2048 characters.")
+  .setURL("http://www.basskid.de")
+  .addField("Mein Rig:",
+    "Intel i7-7700 CPU, 16 GB DDR4 RAM, GeForce GTX 1060 6GB, Logitech G9x Maus, Logitech G15 Tastatur, Roccat Kave 5.1 Headset")
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
