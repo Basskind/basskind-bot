@@ -31,9 +31,9 @@ client.on('message', msg => {
   }
 });
 
-// ?ping (works)
+// ?test ()
 client.on('message', msg => {
-  if (msg.content === Prefix + 'ping') {
+  if (msg.content === Prefix + 'test') {
     msg.channel.send({embed: {
   color: 3447003,
   description: "A very simple Embed!"
