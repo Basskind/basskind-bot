@@ -40,26 +40,22 @@ client.on('message', msg => {
       name: client.user.username,
       icon_url: client.user.avatarURL
     },
-    title: "This is an embed",
-    url: "http://google.com",
-    description: "This is a test embed to showcase what they look like and what they can do.",
+    title: "Basskind Discord Bot v0.2",
+    url: "http://www.basskid.de",
+    description: "Der Discord Bot für die bekloppten.",
     fields: [{
-        name: "Fields",
-        value: "They can have different fields with small headlines."
+        name: "?help",
+        value: "Allgemeiner Hilfe Befehl."
       },
       {
-        name: "Masked links",
-        value: "You can put [masked links](http://google.com) inside of rich embeds."
+        name: "?about",
+        value: "Ein bisschen Werbung für den kleinen [Basskid](http://www.basskid.de)."
       },
-      {
-        name: "Markdown",
-        value: "You can put all the *usual* **__Markdown__** inside of them."
-      }
     ],
     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: "© Example"
+      text: "© by [Basskid](http://www.basskid.de)"
     }
   }
 });
