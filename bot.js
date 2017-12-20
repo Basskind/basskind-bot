@@ -79,7 +79,7 @@ const embed = new Discord.RichEmbed()
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
   .addBlankField(true)
-  .addField("Basskid's HUB:", "[www.basskid.de](http://www.basskid.de)", true)
+  .addField("Basskid's HUB:", "Homepage - [www.basskid.de](http://www.basskid.de)<br>Twitch - [www.twitch.tv/basskidtv](https://www.twitch.tv/basskidtv)", true)
   /*
    * Blank field, useful to create some space.
    */
