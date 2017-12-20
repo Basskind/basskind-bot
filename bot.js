@@ -30,7 +30,7 @@ client.on('message', msg => {
     msg.channel.send({embed: {
   color: 3447003,
   author: {
-      name: client.user.username,
+      name: 'Basskid#9068',
       icon_url: 'https://cdn.discordapp.com/attachments/380540227380314114/392936748067454976/bk_avatar.jpg'
     },
     title: "Basskind Discord Bot v0.2",
