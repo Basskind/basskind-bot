@@ -66,7 +66,7 @@ const embed = new Discord.RichEmbed()
   .setColor(0x0086AE)
   .setDescription("Ehemaliger Playstation 4 „The Elder Scrolls Online“ Spieler. Dort verbrachte ich wunderschöne Jahre. Im Hinblick auf Teamfähigkeit haben Konsolenspieler (zumindest sehr sehr viele) extreme Egoistische Züge, weshalb es mich wieder zurück zu meiner alten Heimat, dem PC, lockte.")
   .setFooter("© by www.basskid.de")
-  .setImage("https://cdn.discordapp.com/attachments/380540227380314114/392936748067454976/bk_avatar.jpg")
+  .setImage("https://cdn.discordapp.com/attachments/380540227380314114/393023484835397633/mr_kartoffelkopf.png")
   .setThumbnail("https://cdn.discordapp.com/attachments/380540227380314114/392936748067454976/bk_avatar.jpg")
   /*
    * Takes a Date object, defaults to current date.
@@ -78,11 +78,12 @@ const embed = new Discord.RichEmbed()
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
-  .addField("Inline Field", "They can also be inline.", true)
+  .addBlankField(true)
+  .addField("Basskid's HUB:", "[www.basskid.de](http://www.basskid.de)", true)
   /*
    * Blank field, useful to create some space.
    */
-  .addBlankField(true)
+  
   .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
 
   msg.channel.send({embed});
