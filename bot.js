@@ -50,7 +50,7 @@ client.on('message', msg => {
 // ?about (works)
 client.on('message', msg => {
   if (msg.content === Prefix + 'about') {
-const embed = new Discord.RichEmbed()
+  const embed = new Discord.RichEmbed()
   .setTitle("Ein paar Worte über mich")
   .setAuthor("Basskid#9068", "https://cdn.discordapp.com/attachments/380540227380314114/392936748067454976/bk_avatar.jpg")
   .setColor(0x0086AE)
