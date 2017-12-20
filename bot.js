@@ -47,7 +47,6 @@ client.on('message', msg => {
     ],
     timestamp: new Date(),
     footer: {
-      icon_url: client.user.avatarURL,
       text: "© by www.basskid.de)"
     }
   }
