@@ -73,20 +73,16 @@ const embed = new Discord.RichEmbed()
    */
   .setTimestamp()
   .setURL("http://www.basskid.de")
+  .addBlankField(true)
   .addField("Mein Rig:",
     "Intel i7-7700 CPU, 16 GB DDR4 RAM, GeForce GTX 1060 6GB, Logitech G9x Maus, Logitech G15 Tastatur, Roccat Kave 5.1 Headset")
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
   .addBlankField(true)
-  .addField("Basskid's HUB:", "Homepage - [www.basskid.de](http://www.basskid.de)<br>Twitch - [www.twitch.tv/basskidtv](https://www.twitch.tv/basskidtv)", true)
-  /*
-   * Blank field, useful to create some space.
-   */
-  
-  .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
-
-  msg.channel.send({embed});
+  .addField("Homepage", "[www.basskid.de](http://www.basskid.de)", true)
+  .addField("Twitch", "[www.twitch.tv/basskidtv](https://www.twitch.tv/basskidtv)", true);  
+    msg.channel.send({embed});
       }
 });
 
