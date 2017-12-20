@@ -24,21 +24,14 @@ client.on('message', msg => {
   }
 });
 
-// ?help
+// ?test (works)
 client.on('message', msg => {
   if (msg.content === Prefix + 'help') {
-  msg.reply(':ping_pong: Under Construction');
-  }
-});
-
-// ?test ()
-client.on('message', msg => {
-  if (msg.content === Prefix + 'test') {
     msg.channel.send({embed: {
   color: 3447003,
   author: {
       name: client.user.username,
-      icon_url: client.user.avatarURL
+      icon_url: 'https://cdn.discordapp.com/attachments/380540227380314114/392936748067454976/bk_avatar.jpg'
     },
     title: "Basskind Discord Bot v0.2",
     url: "http://www.basskid.de",
@@ -55,7 +48,7 @@ client.on('message', msg => {
     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: "© by [Basskid](http://www.basskid.de)"
+      text: "© by www.basskid.de)"
     }
   }
 });
