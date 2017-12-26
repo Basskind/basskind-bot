@@ -7,9 +7,6 @@ client.on('ready', () => {
     client.user.setPresence({ game: { name: '?help für Hilfe', type: 0 } });
 });
 
-var channel = client.servers.get("name", "welcome").defaultChannel;
-client.sendMessage(channel, "Hello");
-
 client.on('guildMemberAdd', member => {
     const channel = member.guild.channels.find('name', 'welcome');
     if (!channel) return;
