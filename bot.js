@@ -2,22 +2,18 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const Prefix = "?";
 
-var channel = client.servers.get("name", "welcome").defaultChannel;
-client.sendMessage(channel, "Hello");
-
 client.on('ready', () => {
     console.log(`Bot has started.`);
     client.user.setPresence({ game: { name: '?help für Hilfe', type: 0 } });
 });
 
+var channel = client.servers.get("name", "welcome").defaultChannel;
+client.sendMessage(channel, "Hello");
+
 client.on('guildMemberAdd', member => {
     const channel = member.guild.channels.find('name', 'welcome');
     if (!channel) return;
     channel.send(`Willkommen auf dem Discord Server von Basskid TV, ${member}`);
-});
-
-client.on('message', function(message) {
-        client.sendMessage(message.author, "Hello!");
 });
 
 client.on('message', msg => {
