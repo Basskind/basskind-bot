@@ -15,7 +15,7 @@ client.on('guildMemberAdd', member => {
 
 client.on('message', msg => {
     if (msg.content === Prefix + 'ping') {
-        msg.sendMessage(message.author, ":ping_pong: Pong!");
+        msg.reply(':ping_pong: Pong!');
     }
 });
 
