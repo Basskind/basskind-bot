@@ -13,9 +13,15 @@ client.on('guildMemberAdd', member => {
     channel.send(`Willkommen auf dem Discord Server von Basskid TV, ${member}`);
 });
 
+// client.on('message', msg => {
+//    if (msg.content === Prefix + 'ping') {
+//        msg.reply(':ping_pong: Pong!');
+//    }
+//});
+
 client.on('message', msg => {
     if (msg.content === Prefix + 'ping') {
-        msg.reply(':ping_pong: Pong!');
+        client.sendMessage(msg.author, ":ping_pong: Pong!");
     }
 });
 
