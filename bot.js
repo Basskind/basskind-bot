@@ -2,6 +2,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const Prefix = "?";
 
+var channel = client.servers.get("name", "welcome").defaultChannel;
+client.sendMessage(channel, "Hello");
+
 client.on('ready', () => {
     console.log(`Bot has started.`);
     client.user.setPresence({ game: { name: '?help für Hilfe', type: 0 } });
@@ -13,15 +16,13 @@ client.on('guildMemberAdd', member => {
     channel.send(`Willkommen auf dem Discord Server von Basskid TV, ${member}`);
 });
 
-// client.on('message', msg => {
-//    if (msg.content === Prefix + 'ping') {
-//        msg.reply(':ping_pong: Pong!');
-//    }
-//});
+client.on('message', function(message) {
+        client.sendMessage(message.author, "Hello!");
+});
 
 client.on('message', msg => {
     if (msg.content === Prefix + 'ping') {
-        client.sendMessage(msg.author, ":ping_pong: Pong!");
+        msg.reply(':ping_pong: Pong!');
     }
 });
 
