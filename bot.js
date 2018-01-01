@@ -20,6 +20,12 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+    if (msg.content === Prefix + 'test') {
+        msg.sendMessage(message, "test!");
+    }
+});
+
+client.on('message', msg => {
     if (msg.content === Prefix + 'help') {
         msg.channel.send({embed: {
             color: 3447003,
